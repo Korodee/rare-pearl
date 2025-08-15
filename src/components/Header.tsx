@@ -107,35 +107,42 @@ export default function Header() {
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-dark-900/95 backdrop-blur-md z-40 md:hidden"
-            onClick={() => setIsMenuOpen(false)}
+          <div
+            className="fixed inset-0 bg-black z-50 md:hidden"
+            style={{
+              backgroundColor: "#000000",
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              zIndex: 50,
+            }}
           >
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full bg-black">
               {/* Mobile Menu Header */}
-              <div className="flex items-center justify-between p-4 border-b border-dark-700">
+              <div className="flex items-center justify-between p-4 border-b border-gray-800 bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900">
                 <div className="flex items-center space-x-2">
                   <Crown className="h-6 w-6 text-gold-500" />
                   <div className="flex flex-col">
                     <span className="text-lg font-serif font-bold text-gold-500">
                       ROYALTY
                     </span>
-                    <span className="text-xs text-dark-300 -mt-1">PERLE RARE</span>
+                    <span className="text-xs text-gray-400 -mt-1">
+                      PERLE RARE
+                    </span>
                   </div>
                 </div>
                 <button
                   onClick={() => setIsMenuOpen(false)}
-                  className="p-2 border border-dark-600 rounded-lg hover:border-gold-500 transition-colors"
+                  className="p-2 border border-gray-700 rounded-lg hover:border-gold-500 transition-colors bg-black"
                 >
                   <X className="h-5 w-5 text-white" />
                 </button>
               </div>
 
               {/* Mobile Menu Content */}
-              <div className="flex-1 flex flex-col justify-center px-6 space-y-6">
+              <div className="flex-1 flex py-6 flex-col justify-center px-6 space-y-6 bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900">
                 <a
                   href="#home"
                   onClick={() => setIsMenuOpen(false)}
@@ -188,7 +195,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         )}
       </div>
     </motion.header>
