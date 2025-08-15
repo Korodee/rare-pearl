@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-[92vh] md:min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
@@ -84,7 +84,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-lg md:text-xl text-dark-300 max-w-3xl mx-auto mb-12 leading-relaxed"
+          className="text-lg md:text-xl text-dark-300 max-w-3xl mx-auto mb-4 md:mb-12 leading-relaxed"
         >
           Affirmez votre valeur en portant les perles qui relient au passé.
           Célébrez la culture africaine avec nos bijoux traditionnels.
@@ -94,7 +94,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4 md:mb-16"
         >
           <motion.a
             href="https://chkzu1-m3.myshopify.com/collections/all"
