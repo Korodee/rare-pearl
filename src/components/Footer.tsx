@@ -85,6 +85,22 @@ export default function Footer() {
                   Contact
                 </a>
               </li>
+              <li>
+                <a
+                  href="/privacy"
+                  className="text-dark-300 underline hover:text-gold-500 transition-colors"
+                >
+                  Politique de confidentialité
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/refund"
+                  className="text-dark-300 underline hover:text-gold-500 transition-colors"
+                >
+                  Politique de remboursement
+                </a>
+              </li>
             </ul>
           </motion.div>
 
